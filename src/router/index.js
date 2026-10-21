@@ -53,7 +53,7 @@ const routes = [
       requiresAuth: true,
       adminOnly: true,
       layout: 'admin',
-      title: 'ESChop 管理控制台'
+      title: '轻舟商城 · 管理控制台'
     }
   },
   { 
@@ -175,7 +175,7 @@ router.beforeEach((to, from) => {
 })
 
 router.afterEach((to, from) => {
-  document.title = to.meta.title || 'ESChop 在线商城'
+  document.title = to.meta.title || '轻舟商城 - 在线购物商城'
   window.scrollTo({ top: 0, behavior: 'smooth' });
   
   logger.route('路由导航结束', {

@@ -41,7 +41,7 @@
     <div class="main-header">
       <div class="header-inner">
         <div class="logo">
-          <router-link to="/"><h1>ESChop</h1></router-link>
+          <router-link to="/"><h1>轻舟商城</h1></router-link>
         </div>
         <div class="search-box">
           <input 

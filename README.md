@@ -98,15 +98,11 @@ cp .env.example .env   # Windows: copy .env.example .env
 
 ### 3. 初始化数据库
 
-创建名为 `ecshop` 的数据库后，导入建表脚本并执行迁移：
-
-```sql
-CREATE DATABASE ecshop DEFAULT CHARACTER SET utf8mb4;
-```
+建表脚本会自动创建名为 `qingzhou_mall` 的数据库并导入 8 张表与演示数据：
 
 ```sh
-node src/backend/db/ecshop_8表.sql   # 或在 MySQL 客户端中 source 该文件
-node src/backend/db/migrate.mjs      # 幂等迁移脚本，可重复执行
+node src/backend/db/qingzhou_8表.sql   # 或在 MySQL 客户端中 source 该文件
+node src/backend/db/migrate.mjs        # 幂等迁移脚本，可重复执行
 ```
 
 ### 4. 启动服务
@@ -117,6 +113,13 @@ npm run dev         # 前端 Vite 开发服务器，默认 http://localhost:5173
 ```
 
 打开 http://localhost:5173 即可访问商城（开发模式下 Vite 将 `/api` 代理到后端 3001 端口）。
+
+### 5. 演示账号
+
+| 角色 | 用户名 | 密码 |
+| --- | --- | --- |
+| 管理员 | admin | admin123 |
+| 普通用户 | demo_user | qingzhou123 |
 
 ## API 概览
 

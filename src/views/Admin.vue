@@ -136,7 +136,7 @@
                       ></span>
                       <div>
                         <strong>MySQL 数据库</strong>
-                        <small>ecshop 用户数据</small>
+                        <small>qingzhou_mall 用户数据</small>
                       </div>
                     </div>
                     <div class="status-value">
@@ -573,7 +573,7 @@
                 </el-select>
                 <el-input
                   v-model="redisForm.key"
-                  placeholder="键名，如 ecshop:home:hot"
+                  placeholder="键名，如 qingzhou:home:hot"
                   style="width: 240px"
                   :disabled="redisForm.command === 'KEYS'"
                 />
@@ -594,7 +594,7 @@
                 <el-input
                   v-if="redisForm.command === 'KEYS'"
                   v-model="redisForm.pattern"
-                  placeholder="匹配模式，如 ecshop:*"
+                  placeholder="匹配模式，如 qingzhou:*"
                   style="width: 220px"
                 />
                 <el-button
@@ -721,10 +721,10 @@ const redisState = reactive({
 })
 const redisForm = reactive({
   command: 'SET',
-  key: 'ecshop:demo',
+  key: 'qingzhou:demo',
   value: '',
   seconds: 60,
-  pattern: 'ecshop:*',
+  pattern: 'qingzhou:*',
   result: '',
   running: false
 })
@@ -740,12 +740,12 @@ const orderPagination = reactive({ page: 1, pageSize: 10, total: 0, totalPages: 
 const orderStatusFilter = ref('')
 const orderKeyword = ref('')
 
-const SETTINGS_KEY = 'ecshop-admin-settings'
+const SETTINGS_KEY = 'qingzhou-admin-settings'
 const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || '/api'
 const frontendOrigin = window.location.origin
 
 const defaultSettings = {
-  systemName: 'ESChop 管理控制台',
+  systemName: '轻舟商城 · 管理控制台',
   redisHost: redisConfig.host,
   redisPort: Number(redisConfig.port),
   redisDb: Number(redisConfig.db),

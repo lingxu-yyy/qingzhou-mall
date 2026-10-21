@@ -1,4 +1,4 @@
-// ECShop 数据库扩容迁移：4 表 -> 8 表（幂等，可重复执行）
+// 轻舟商城数据库扩容迁移：4 表 -> 8 表（幂等，可重复执行）
 // users 增加 balance；新增 categories / addresses / cart_items / favorites；
 // products 增加 category_id 外键；orders 增加 address_id 外键。
 import mysql from 'mysql2/promise';
@@ -14,7 +14,7 @@ const DB = {
   host: process.env.DB_HOST || 'localhost',
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME || 'ecshop',
+  database: process.env.DB_NAME || 'qingzhou_mall',
   port: parseInt(process.env.DB_PORT) || 3306
 };
 const conn = await mysql.createConnection(DB);

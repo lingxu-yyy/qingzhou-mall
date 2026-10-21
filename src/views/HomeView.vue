@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
     <div class="page-container">
-      <h2>欢迎来到 ESChop</h2>
+      <h2>欢迎来到轻舟商城</h2>
       
       <div class="main-content">
         <div class="category-sidebar">

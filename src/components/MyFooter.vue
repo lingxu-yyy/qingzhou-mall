@@ -1,7 +1,7 @@
 <template>
   <div class="myfooter">
     <div class="footer-container">
-      <p>© {{ year }} ECShop在线商城 - 毕业设计</p>
+      <p>© {{ year }} 轻舟商城 · 前后端分离全栈实践项目</p>
     </div>
   </div>
 </template>

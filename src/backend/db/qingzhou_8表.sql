@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.39, for Win64 (x86_64)
 --
--- Host: localhost    Database: ecshop
+-- Host: localhost    Database: qingzhou_mall
 -- ------------------------------------------------------
 -- Server version	8.0.39
 
@@ -16,12 +16,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `ecshop`
+-- Current Database: `qingzhou_mall`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `ecshop` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `qingzhou_mall` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
-USE `ecshop`;
+USE `qingzhou_mall`;
 
 --
 -- Table structure for table `addresses`
@@ -52,7 +52,7 @@ CREATE TABLE `addresses` (
 
 LOCK TABLES `addresses` WRITE;
 /*!40000 ALTER TABLE `addresses` DISABLE KEYS */;
-INSERT INTO `addresses` VALUES (14,45,'测试二','13800139008','湖南省长沙市','岳麓区测试路2号',1,'2026-10-08 00:12:08','2026-10-08 00:12:26');
+INSERT INTO `addresses` VALUES (1,2,'演示用户','13800000002','湖南省长沙市','岳麓区测试路2号',1,'2026-10-08 00:12:08','2026-10-08 00:12:26');
 /*!40000 ALTER TABLE `addresses` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -85,7 +85,7 @@ CREATE TABLE `cart_items` (
 
 LOCK TABLES `cart_items` WRITE;
 /*!40000 ALTER TABLE `cart_items` DISABLE KEYS */;
-INSERT INTO `cart_items` VALUES (25,45,1,1,1,'2026-10-08 00:24:42','2026-10-08 00:24:42');
+INSERT INTO `cart_items` VALUES (1,2,1,1,1,'2026-10-08 00:24:42','2026-10-08 00:24:42');
 /*!40000 ALTER TABLE `cart_items` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -143,7 +143,7 @@ CREATE TABLE `favorites` (
 
 LOCK TABLES `favorites` WRITE;
 /*!40000 ALTER TABLE `favorites` DISABLE KEYS */;
-INSERT INTO `favorites` VALUES (11,45,1,'2026-10-07 07:46:47');
+INSERT INTO `favorites` VALUES (1,2,1,'2026-10-07 07:46:47');
 /*!40000 ALTER TABLE `favorites` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -221,7 +221,7 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
-INSERT INTO `orders` VALUES (1,'O20260909201599346',19,6194.00,14,0.14,6193.86,'已发货','alipay','??','13812345678','?????????88?',NULL,NULL,'2026-09-09 01:10:01','2026-09-09 01:19:39'),(2,'O20260909231914819',20,85.50,0,0.00,85.50,'已下单','wechat','王小明','13700001111','广州市天河区珠江新城88号',NULL,'请尽快发货','2026-09-09 01:10:31','2026-09-09 01:10:31'),(3,'O20260909254556257',21,73.50,0,0.00,73.50,'已下单','alipay','用户A','13800000000','测试地址',NULL,NULL,'2026-09-09 01:10:54','2026-09-09 01:10:54'),(36,'O202610072B344F79',45,195.00,0,0.00,195.00,'已完成','wallet','测试','13800139007','湖南省岳阳市 岳阳楼区测试路1号',NULL,NULL,'2026-10-07 07:48:44','2026-10-07 08:02:35'),(40,'O20261007400D0580',45,73.50,0,0.00,73.50,'已取消','wallet','测试','13800139007','湖南省岳阳市岳阳楼区测试路1号',NULL,NULL,'2026-10-07 08:06:07','2026-10-07 08:06:07'),(41,'O202610084A9AD4FE',45,73.50,0,0.00,73.50,'已付款','wechat','测试二','13800139008','湖南省长沙市岳麓区测试路2号',NULL,NULL,'2026-10-08 00:22:14','2026-10-08 00:23:09');
+INSERT INTO `orders` VALUES (1,'O20260909201599346',2,6194.00,14,0.14,6193.86,'已发货','alipay','演示用户','13800000002','湖南省长沙市岳麓区测试路2号',NULL,NULL,'2026-09-09 01:10:01','2026-09-09 01:19:39'),(2,'O20260909231914819',2,85.50,0,0.00,85.50,'已下单','wechat','演示用户','13800000002','湖南省长沙市岳麓区测试路2号',NULL,'请尽快发货','2026-09-09 01:10:31','2026-09-09 01:10:31'),(3,'O20260909254556257',2,73.50,0,0.00,73.50,'已下单','alipay','演示用户','13800000002','湖南省长沙市岳麓区测试路2号',NULL,NULL,'2026-09-09 01:10:54','2026-09-09 01:10:54'),(36,'O202610072B344F79',2,195.00,0,0.00,195.00,'已完成','wallet','演示用户','13800000002','湖南省长沙市岳麓区测试路2号',NULL,NULL,'2026-10-07 07:48:44','2026-10-07 08:02:35'),(40,'O20261007400D0580',2,73.50,0,0.00,73.50,'已取消','wallet','演示用户','13800000002','湖南省长沙市岳麓区测试路2号',NULL,NULL,'2026-10-07 08:06:07','2026-10-07 08:06:07'),(41,'O202610084A9AD4FE',2,73.50,0,0.00,73.50,'已付款','wechat','演示用户','13800000002','湖南省长沙市岳麓区测试路2号',NULL,NULL,'2026-10-08 00:22:14','2026-10-08 00:23:09');
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -294,12 +294,12 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'admin',NULL,'$2b$10$5eBQ8H4Z9/3VwaDQYo2iNeIV.Toh2iqmnPFl5WinTvn7Dt.8qGMxu','13800138000',NULL,'admin',0,0.00,'2026-05-13 01:57:13','2026-09-11 02:42:09'),(3,'gyok',NULL,'12345678','17551569827',NULL,'user',0,0.00,'2026-05-13 02:45:51','2026-06-03 03:35:25'),(8,'shuhao',NULL,'shuhao1208.','16576548809',NULL,'user',0,0.00,'2026-05-20 03:13:39','2026-06-03 03:35:39'),(13,'晋鑫宇',NULL,'$2b$10$RsiHUNbPGds2HWto0IBmresBrvtL.W5PjAUKWrYUyZCXRwss5PpZq','19819581958',NULL,'user',0,0.00,'2026-06-03 03:34:37','2026-06-03 03:34:37'),(14,'yyy',NULL,'$2b$10$kWuytK07yY8QnVtqCeKYJO9zjwxlTlV0pa0nJz1H7NiLT/38kckve','17551569827',NULL,'user',0,0.00,'2026-06-10 03:33:17','2026-06-10 03:33:17'),(15,'舒and豪',NULL,'$2b$10$xo.D4b3TaXWorYYc.N5xyunTH1DKUceTGYXaRsjlelCUJrm7nxpUe','19819581958',NULL,'user',0,0.00,'2026-06-10 03:35:26','2026-06-10 03:35:26'),(16,'test001',NULL,'$2b$10$53u/tnsZzlJYIRPVnO6X/.TESA1UnmL.YPF9VZDvxvPFKS4BcS02q','13800138000',NULL,'user',0,0.00,'2026-06-17 00:57:01','2026-06-17 00:57:01'),(17,'shuhaoyyy',NULL,'$2b$10$PTbhCGYdYUAhVZyY7GudfOqpPen.DIcz6o1d0yhPM2vL9pnM9nqOe','17551569827',NULL,'user',0,0.00,'2026-08-24 15:37:19','2026-08-24 15:37:19'),(18,'yyyu',NULL,'$2b$10$ROMRhZtPNNqDBLltW2cu0uxQmICk4oX7R/ZXxWthaXCkBlvmXwQfG','17556568726',NULL,'user',0,0.00,'2026-08-24 15:40:36','2026-08-24 15:40:36'),(19,'buyer091001',NULL,'$2b$10$2AQDqDvP8TtAWsQzXLJ/J./JSM0I3c2Y.ekIGyjdE4xc2ZYThNSWi','13735286222',NULL,'user',0,0.00,'2026-09-09 01:10:01','2026-09-09 01:10:01'),(20,'buyer091031',NULL,'$2b$10$Fu6BV78U/COtDX1YZ0xaA.9zhvpl4E1naiPIxYCMISJsSjPBii8WS','13745550103',NULL,'user',0,0.00,'2026-09-09 01:10:31','2026-09-09 01:10:31'),(21,'userA091054',NULL,'$2b$10$tLydy9gkxTJuaHc9f9AgmOYUbA9J8EbKaGstIxy13vfVoS2hdxbJ2','13879444616',NULL,'user',0,0.00,'2026-09-09 01:10:54','2026-09-09 01:10:54'),(22,'userB091054',NULL,'$2b$10$gbBPWJAlwYNDvXwaNqJVyewY6c.spY.Y.nDwMR7szw51KPTiRc8AK','13949585600',NULL,'user',0,0.00,'2026-09-09 01:10:54','2026-09-09 01:10:54'),(44,'adminui',NULL,'$2b$10$B3kcMwiNXm5qVxfFwUpVJ.ws8W3umeBQ0WSwF5vB6p1O7vVldkO8O','13900000002',NULL,'admin',0,0.00,'2026-10-07 07:15:43','2026-10-07 07:15:49'),(45,'testuser_1007','小测试','$2b$10$X8QAuvsjefBbDHUxq0IAi.RYABZWCfMpBZ88uedBqZUd/uYsVVezK','13800139007','test@ecshop.com','user',0,805.00,'2026-10-07 07:33:09','2026-10-08 00:28:26');
+INSERT INTO `users` VALUES (1,'admin','管理员','$2b$10$Nhc2ONsX4toJxvRTskQSzeGyOdAadUW2xTcPx4SOpaTBqVcWh2N.C','13800000001','admin@qingzhou-mall.com','admin',0,0.00,'2026-05-13 01:57:13','2026-05-13 01:57:13'),(2,'demo_user','演示用户','$2b$10$aquZacGZxF5NaQQz3N9D0e28zL.Zyu59Nnma468TAJgx8ymVgzF5y','13800000002','demo@qingzhou-mall.com','user',0,805.00,'2026-05-13 02:45:51','2026-05-13 02:45:51');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping routines for database 'ecshop'
+-- Dumping routines for database 'qingzhou_mall'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

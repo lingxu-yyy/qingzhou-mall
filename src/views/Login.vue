@@ -17,7 +17,7 @@
             <div class="image-overlay"></div>
           </div>
           <div class="image-content">
-            <h3>欢迎来到 ESChop</h3>
+            <h3>欢迎来到轻舟商城</h3>
             <p>一站式购物体验，品质生活从这里开始</p>
           </div>
         </div>
