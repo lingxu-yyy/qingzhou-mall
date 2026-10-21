@@ -1,6 +1,7 @@
 :root {
   --primary-color: #f40;
   --primary-hover: #e33;
+  --primary-light: #fff1ee;
   --primary-gradient: linear-gradient(135deg, #f40 0%, #ff8c00 100%);
   --secondary-color: #3b82f6;
   --secondary-hover: #2563eb;
