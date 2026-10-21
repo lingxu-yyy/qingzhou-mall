@@ -1,6 +1,7 @@
 {
-  "name": "vuevite-init",
-  "version": "0.0.0",
+  "name": "qingzhou-mall",
+  "version": "1.0.0",
+  "description": "轻舟商城 - 前后端分离 B2C 在线购物商城（Vue 3 + Express + MySQL + Redis）",
   "private": true,
   "type": "module",
   "scripts": {

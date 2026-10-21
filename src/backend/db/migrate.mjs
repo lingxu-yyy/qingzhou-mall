@@ -5,9 +5,18 @@ import mysql from 'mysql2/promise';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DB = { host: 'localhost', user: 'root', password: 'root', database: 'ecshop', port: 3306 };
+const DB = {
+  host: process.env.DB_HOST || 'localhost',
+  user: process.env.DB_USER || 'root',
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME || 'ecshop',
+  port: parseInt(process.env.DB_PORT) || 3306
+};
 const conn = await mysql.createConnection(DB);
 
 const log = (...a) => console.log(...a);
