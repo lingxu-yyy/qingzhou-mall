@@ -101,8 +101,8 @@ cp .env.example .env   # Windows: copy .env.example .env
 建表脚本会自动创建名为 `qingzhou_mall` 的数据库并导入 8 张表与演示数据：
 
 ```sh
-node src/backend/db/qingzhou_8表.sql   # 或在 MySQL 客户端中 source 该文件
-node src/backend/db/migrate.mjs        # 幂等迁移脚本，可重复执行
+mysql -u root -p < src/backend/db/qingzhou_8表.sql   # 建库建表 + 演示数据
+node src/backend/db/migrate.mjs                      # 幂等迁移（4 表 → 8 表）
 ```
 
 ### 4. 启动服务
